@@ -1,0 +1,41 @@
+@mixin fz-l {
+  font-size: 24px;
+}
+
+@mixin fz-m {
+  font-size: 20px;
+}
+
+@mixin d-flex {
+  display: flex;
+}
+
+@mixin mb-60 {
+  margin-bottom: 60px;
+}
+
+@mixin mb-30 {
+  margin-bottom: 30px;
+}
+
+@mixin mb-20 {
+  margin-bottom: 20px;
+}
+
+@mixin bg-primary{
+  background: $primary;
+  color: #fff;
+}
+
+@mixin bg-secondary{
+  background: $secondary;
+  color: $primary;
+}
+
+@mixin f-primary{
+  color: $primary;
+}
+
+@mixin boder-secondary{
+  border: 1px solid $secondary;
+}

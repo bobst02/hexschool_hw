@@ -1,0 +1,190 @@
+/*    頁首nav   */
+.header {
+  @include d-flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  @include mb-30
+}
+
+.header-logo {
+  width: 100%;
+  height: 40px;
+}
+
+.header-nav {
+  @include d-flex;
+  line-height: 22px;
+}
+
+.main {
+  @include d-flex;
+}
+
+.link {
+  margin-left: 60px;
+  padding-top: 10px;
+
+  a {
+    color: $primary;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid $primary;
+    }
+  }
+
+  &:last-child {
+    margin-left: 79px;
+    padding-top: 9px;
+  }
+}
+
+/*    banner   */
+.banner {
+  @include mb-60;
+}
+
+/*    主要內容   */
+.main {
+  @include d-flex;
+}
+
+/*    側邊欄   */
+.aside-nav {
+  width: 300px;
+  margin-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include boder-secondary;
+  @include fz-l;
+  @include f-primary text-align: center;
+  line-height: 33px;
+
+  &:hover {
+    border: 1px solid $primary;
+  }
+}
+
+.nav-title {
+  @include bg-primary;
+  border: 1px solid transparent;
+}
+
+.nav-select {
+  @include bg-secondary;
+}
+
+/*    商品區   */
+.cardlist {
+  width: 620px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  position: relative;
+  max-width: 300px;
+  @include mb-20;
+}
+
+.card-tag {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 106.73px;
+  padding: 11.8px 10px 8px;
+  @include bg-primary;
+  writing-mode: vertical-lr;
+  letter-spacing: 3px;
+}
+
+.card-like {
+  position: absolute;
+  width: 23px;
+  top: 19px;
+  right: 22px;
+  border: none;
+}
+
+.card-title {
+  @include d-flex;
+  justify-content: space-between;
+}
+
+.card-name,
+.card-price {
+  @include fz-m;
+  @include f-primary;
+  @include boder-secondary;
+  padding: 14px 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.card-name {
+  width: 173px;
+}
+
+.card-price {
+  width: 127px;
+  border-left: none;
+}
+
+.card-buy {
+  width: 300px;
+  @include bg-secondary;
+  @include fz-l;
+  font-weight: 600;
+  line-height: 33px;
+  border: none;
+  padding: 16px 90px;
+  cursor: pointer;
+
+  &:hover {
+    @include bg-primary;
+  }
+}
+
+/*    換頁   */
+.pagination {
+  @include d-flex;
+  justify-content: end;
+  margin-top: 10px;
+  @include mb-60;
+}
+
+.pagelist {
+  li {
+    @include boder-secondary;
+    text-align: center;
+  }
+}
+
+.page {
+  width: 60px;
+  padding: 16px 0;
+  @include fz-m;
+  line-height: 28px;
+  @include f-primary;
+
+  img {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    @include bg-secondary;
+  }
+}
+
+.page-change {
+  padding: 18px 0;
+}
+
+.page-select {
+  @include bg-primary;
+}

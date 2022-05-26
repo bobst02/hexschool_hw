@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+/*    頁首nav   */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  width: 100%;
+  height: 40px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 22px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link {
+  margin-left: 60px;
+  padding-top: 10px;
+}
+
+.link a {
+  color: #3F5D45;
+  border-bottom: 2px solid transparent;
+}
+
+.link a:hover {
+  border-bottom: 2px solid #3F5D45;
+}
+
+.link:last-child {
+  margin-left: 79px;
+  padding-top: 9px;
+}
+
+/*    banner   */
+.banner {
+  margin-bottom: 60px;
+}
+
+/*    主要內容   */
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*    側邊欄   */
+.aside-nav {
+  width: 300px;
+  margin-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #EAF0ED;
+  font-size: 24px;
+  color: #3F5D45;
+  text-align: center;
+  line-height: 33px;
+}
+
+.aside-nav:hover {
+  border: 1px solid #3F5D45;
+}
+
+.nav-title {
+  background: #3F5D45;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.nav-select {
+  background: #EAF0ED;
+  color: #3F5D45;
+}
+
+/*    商品區   */
+.cardlist {
+  width: 620px;
+}
+
+.cardlist ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.card-tag {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 106.73px;
+  padding: 11.8px 10px 8px;
+  background: #3F5D45;
+  color: #fff;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: 3px;
+}
+
+.card-like {
+  position: absolute;
+  width: 23px;
+  top: 19px;
+  right: 22px;
+  border: none;
+}
+
+.card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-name,
+.card-price {
+  font-size: 20px;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+  padding: 14px 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.card-name {
+  width: 173px;
+}
+
+.card-price {
+  width: 127px;
+  border-left: none;
+}
+
+.card-buy {
+  width: 300px;
+  background: #EAF0ED;
+  color: #3F5D45;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  border: none;
+  padding: 16px 90px;
+  cursor: pointer;
+}
+
+.card-buy:hover {
+  background: #3F5D45;
+  color: #fff;
+}
+
+/*    換頁   */
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.pagelist li {
+  border: 1px solid #EAF0ED;
+  text-align: center;
+}
+
+.page {
+  width: 60px;
+  padding: 16px 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: #3F5D45;
+}
+
+.page img {
+  margin: 0 auto;
+}
+
+.page:hover {
+  background: #EAF0ED;
+  color: #3F5D45;
+}
+
+.page-change {
+  padding: 18px 0;
+}
+
+.page-select {
+  background: #3F5D45;
+  color: #fff;
+}
+/*# sourceMappingURL=all.css.map */
