@@ -227,26 +227,40 @@ img {
 }
 
 /*    側邊欄   */
-.aside-nav {
-  width: 300px;
+aside {
   margin-right: 20px;
+}
+
+.aside-nav {
+  margin-top: -1px;
+  width: 300px;
   padding-top: 16px;
   padding-bottom: 16px;
   border: 1px solid #EAF0ED;
+  border-bottom: none;
   font-size: 24px;
   color: #3F5D45;
   text-align: center;
   line-height: 33px;
 }
 
+.aside-nav:last-child {
+  border-bottom: 1px solid #EAF0ED;
+}
+
 .aside-nav:hover {
-  border: 1px solid #3F5D45;
+  background: #ccdbd4;
 }
 
 .nav-title {
+  width: 300px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 33px;
   background: #3F5D45;
   color: #fff;
-  border: 1px solid transparent;
 }
 
 .nav-select {
@@ -281,8 +295,7 @@ img {
   position: absolute;
   top: 0;
   left: 20px;
-  height: 106.73px;
-  padding: 11.8px 10px 8px;
+  padding: 12px 10px 17px;
   background: #3F5D45;
   color: #fff;
   -webkit-writing-mode: vertical-lr;
@@ -358,7 +371,12 @@ img {
 
 .pagelist li {
   border: 1px solid #EAF0ED;
+  border-right: none;
   text-align: center;
+}
+
+.pagelist:last-child {
+  border-right: 1px solid #EAF0ED;
 }
 
 .page {

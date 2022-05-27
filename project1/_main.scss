@@ -50,24 +50,39 @@
 }
 
 /*    側邊欄   */
-.aside-nav {
-  width: 300px;
+aside {
   margin-right: 20px;
+}
+
+.aside-nav {
+  margin-top: -1px;
+  width: 300px;
   padding-top: 16px;
   padding-bottom: 16px;
   @include boder-secondary;
+  border-bottom: none;
   @include fz-l;
-  @include f-primary text-align: center;
+  @include f-primary;
+  text-align: center;
   line-height: 33px;
 
+  &:last-child {
+    border-bottom: 1px solid $secondary;
+  }
+
   &:hover {
-    border: 1px solid $primary;
+    background: darken($secondary, 10%);
   }
 }
 
 .nav-title {
+  width: 300px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include fz-l;
+  text-align: center;
+  line-height: 33px;
   @include bg-primary;
-  border: 1px solid transparent;
 }
 
 .nav-select {
@@ -96,8 +111,7 @@
   position: absolute;
   top: 0;
   left: 20px;
-  height: 106.73px;
-  padding: 11.8px 10px 8px;
+  padding: 12px 10px 17px;
   @include bg-primary;
   writing-mode: vertical-lr;
   letter-spacing: 3px;
@@ -161,7 +175,12 @@
 .pagelist {
   li {
     @include boder-secondary;
+    border-right: none;
     text-align: center;
+  }
+
+  &:last-child {
+    border-right: 1px solid $secondary;
   }
 }
 
