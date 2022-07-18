@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.font-n {
+  font-style: normal;
+}
+
+.fz-s {
+  font-size: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 106px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 84px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-between {
+  align-items: space-between;
+}
+
+.mt-7 {
+  margin-top: 3.5rem;
+}
+
+.mt-8 {
+  margin-top: 4rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-7 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 4rem;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week2/banner.png?raw=true);
+  background-size: cover;
+}
+
+.banner {
+  width: 304px;
+  color: #fff;
+  font-weight: 700;
+}
+.banner span {
+  line-height: 42px;
+}
+.banner p {
+  margin-left: 13px;
+}
+
+.about {
+  padding-top: 4rem;
+  padding-bottom: 1.75rem;
+}
+.about ul {
+  font-weight: 700;
+}
+.about_info {
+  margin: 16px 0 20px;
+}
+.about_info li {
+  margin: 4px 0;
+}
+.about_info li:last-child {
+  margin-top: 8px;
+}
+.about_list {
+  width: 384px;
+  margin: 0 auto 28px;
+  border-top: 1px solid #000;
+}
+.about_list li {
+  margin: 28px 0;
+  line-height: 42px;
+}
+.about_list_circle {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  content: "　";
+  width: 22px;
+  height: 22px;
+  background-color: #891818;
+  border-radius: 50%;
+}
+
+.brand {
+  padding-top: 3.5rem;
+  padding-bottom: 7.75rem;
+}
+.brand img {
+  margin-top: 4px;
+  margin-bottom: 36px;
+}
+
+.work {
+  padding-top: 3.5rem;
+  padding-bottom: 6rem;
+}
+.work img {
+  margin-bottom: 1rem;
+}
+.work li {
+  margin-bottom: 3rem;
+  font-size: 20px;
+  line-height: 42px;
+}
+
+.contact {
+  padding: 4rem 0;
+}
+.contact a {
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
