@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -148,12 +148,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 24px;
-  font-style: italic;
   line-height: 1.5;
-}
-
-.font-n {
-  font-style: normal;
 }
 
 .fz-s {
@@ -162,12 +157,6 @@ body {
 
 .text-center {
   text-align: center;
-}
-
-h1 {
-  font-size: 80px;
-  line-height: 106px;
-  font-weight: 900;
 }
 
 h2 {
@@ -253,6 +242,7 @@ h2 {
   height: 100vh;
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week2/banner.png?raw=true);
   background-size: cover;
+  background-position: center;
 }
 
 .banner {
@@ -260,11 +250,20 @@ h2 {
   color: #fff;
   font-weight: 700;
 }
-.banner span {
+.banner h1 {
+  font-size: 24px;
   line-height: 42px;
+}
+.banner h1 span {
+  font-size: 80px;
+  line-height: 106px;
+  font-weight: 900;
 }
 .banner p {
   margin-left: 13px;
+}
+.banner li:hover {
+  transform: scale(1.2);
 }
 
 .about {
@@ -284,7 +283,7 @@ h2 {
   margin-top: 8px;
 }
 .about_list {
-  width: 384px;
+  display: inline-block;
   margin: 0 auto 28px;
   border-top: 1px solid #000;
 }
@@ -292,7 +291,7 @@ h2 {
   margin: 28px 0;
   line-height: 42px;
 }
-.about_list_circle {
+.about_list li::before {
   display: inline-block;
   vertical-align: middle;
   margin-right: 16px;
@@ -331,4 +330,7 @@ h2 {
 .contact a {
   text-decoration: none;
   color: #fff;
+}
+.contact a:hover {
+  border-bottom: 1px solid #fff;
 }/*# sourceMappingURL=style.css.map */
