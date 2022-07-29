@@ -1,0 +1,675 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 372px;
+  }
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+@media (max-width: 375px) {
+  .mb-48 {
+    margin-bottom: 24px;
+  }
+}
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 375px) {
+  .py-80 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 48px;
+}
+@media (max-width: 375px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 48px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+.f-italic {
+  font-style: italic;
+}
+
+.f-bold {
+  font-weight: bold;
+}
+
+.f-center {
+  text-align: center;
+}
+
+.f-right {
+  text-align: right;
+}
+
+.bg-primary {
+  background-color: #AA0601;
+  color: #fff;
+}
+
+.bg-tertiary {
+  background-color: #FBF2F2;
+}
+
+.f-primary {
+  color: #AA0601;
+}
+
+.f-secondary {
+  color: #650300;
+}
+
+.f-white {
+  color: #fff;
+}
+
+.btn {
+  background-color: #AA0601;
+  color: #fff;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: #770401;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+}
+
+.header {
+  height: 80px;
+}
+.header_logo {
+  width: 80px;
+  height: 48.57px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+  background-size: cover;
+}
+.header_nav li {
+  margin-left: 64px;
+}
+.header_nav a {
+  color: #fff;
+}
+.header_nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+.header span {
+  display: none;
+}
+@media (max-width: 375px) {
+  .header_nav {
+    display: none;
+  }
+  .header span {
+    font-size: 40px;
+  }
+  .header span:hover {
+    color: #d77d7d;
+  }
+}
+
+.footer {
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+.footer_nav {
+  margin-bottom: 24px;
+}
+.footer_nav li {
+  margin-right: 48px;
+  padding: 12px 0;
+}
+.footer_nav a {
+  color: #fff;
+}
+.footer_nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+.footer_link li {
+  margin-left: 32px;
+}
+.footer_link li:hover {
+  transform: scale(1.2);
+}
+.footer_link img {
+  width: 48px;
+}
+.footer_desktop {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  font-size: 36px;
+  border-bottom: 1px solid #FFFFFF;
+}
+.footer_desktop li {
+  margin-bottom: 8px;
+}
+.footer_desktop a {
+  color: #fff;
+  display: inline-block;
+}
+.footer_desktop a:hover {
+  color: #d77d7d;
+}
+.footer_desktop span {
+  margin-right: 16px;
+  font-size: 36px;
+  vertical-align: middle;
+}
+.footer_copyright li {
+  margin-left: 48px;
+  padding: 1px;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .footer_link li {
+    margin-left: 16px;
+  }
+  .footer_link img {
+    width: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .footer {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .footer_nav {
+    display: none;
+  }
+  .footer_link {
+    position: absolute;
+    right: 12px;
+  }
+  .footer_link li {
+    margin-left: 8px;
+  }
+  .footer_link img {
+    width: 24px;
+  }
+  .footer_desktop {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .footer_desktop span {
+    font-size: 18px;
+  }
+  .footer_copyright {
+    flex-direction: column;
+  }
+  .footer_copyright p {
+    margin-bottom: 8px;
+  }
+  .footer_copyright ul {
+    flex-direction: column;
+  }
+  .footer_copyright li {
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .footer_copyright li:first-child {
+    margin-bottom: 8px;
+  }
+}
+
+.banner {
+  padding: 296px 0;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-size: cover;
+}
+.banner_title {
+  font-size: 36px;
+}
+.banner_title span {
+  font-size: 64px;
+}
+.banner_btn {
+  padding: 6px 12px;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .banner {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+  }
+}
+@media (max-width: 375px) {
+  .banner {
+    padding: 144px 0;
+  }
+  .banner_title {
+    font-size: 16px;
+  }
+  .banner_title span {
+    font-size: 24px;
+  }
+}
+
+.service_list li {
+  width: 23.5%;
+}
+.service_list img {
+  width: 100px;
+  margin: 0 auto 16px;
+}
+.service_list h5 {
+  margin-bottom: 8px;
+  text-align: center;
+  color: #650300;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .service_list {
+    flex-wrap: wrap;
+  }
+  .service_list li {
+    width: 48.5%;
+  }
+}
+@media (max-width: 375px) {
+  .service_list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service_list li {
+    width: 100%;
+  }
+}
+
+.glasses_list li {
+  width: 32%;
+}
+.glasses_list img {
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .glasses_list {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .glasses_list li {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+  .glasses_list li:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 375px) {
+  .glasses_list li {
+    width: 100%;
+  }
+}
+
+.signature {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  background-size: cover;
+}
+.signature_img1 {
+  content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true");
+}
+.signature_img2 {
+  content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true");
+}
+.signature h4 {
+  padding: 8px 0;
+  background-color: #fff;
+}
+@media (max-width: 768px) {
+  .signature {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+  }
+  .signature_list {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .signature_list li:first-child {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .signature {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+  }
+  .signature_img1 {
+    content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true");
+  }
+  .signature_img2 {
+    content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true");
+  }
+}
+
+.card {
+  width: 23.5%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+}
+.card_list {
+  padding: 16px;
+}
+.card_name {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.card_content {
+  margin-bottom: 72px;
+}
+.card_date {
+  font-size: 14px;
+  color: #707070;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 48.5%;
+    margin-bottom: 24px;
+  }
+  .card:nth-child(3),
+.card :nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 375px) {
+  .card {
+    width: 100%;
+  }
+  .card:nth-child(3) {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .customer_card {
+    flex-wrap: wrap;
+  }
+}
+
+.contact {
+  width: 50%;
+  margin: 0 auto;
+}
+.contact p {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+.contact li {
+  margin-bottom: 16px;
+}
+.contact label {
+  display: block;
+  margin-bottom: 8px;
+}
+.contact input[type=text] {
+  width: 100%;
+  padding: 6px 12px;
+  background-color: #FBF2F2;
+  border: 1px solid #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contact input[type=number] {
+  width: 100%;
+  padding: 6px 12px;
+  background-color: #FBF2F2;
+  border: 1px solid #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contact input[type=email] {
+  width: 100%;
+  padding: 6px 12px;
+  background-color: #FBF2F2;
+  border: 1px solid #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contact input[type=checkbox] {
+  margin: 4px;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  vertical-align: top;
+}
+.contact textarea {
+  width: 100%;
+  padding: 6px 12px;
+  background-color: #FBF2F2;
+  border: 1px solid #000;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 136px;
+  display: block;
+}
+.contact_btn {
+  width: 64%;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: block;
+  border: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .contact {
+    width: 75%;
+  }
+  .contact h3 {
+    margin-bottom: 24px;
+  }
+  .contact p {
+    font-size: 16px;
+  }
+  .contact_btn {
+    width: 46%;
+  }
+  .contact ul {
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 375px) {
+  .contact {
+    width: 100%;
+  }
+  .contact_btn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=all.css.map */

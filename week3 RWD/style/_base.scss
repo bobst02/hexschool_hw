@@ -1,0 +1,131 @@
+// =========================== container ===========================
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @include pad {
+    max-width: 720px;
+  }
+
+  @include phone {
+    max-width: 372px;
+  }
+}
+
+// =========================== margin ===========================
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+  @include phone{
+    margin-bottom: 24px;
+  }
+}
+
+// =========================== padding ===========================
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include phone{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+// =========================== flex ===========================
+
+.d-flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+// =========================== font ===========================
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 48px;
+  @include phone{
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 48px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+.f-italic {
+  font-style: italic;
+}
+
+.f-bold {
+  font-weight: bold;
+}
+
+.f-center {
+  text-align: center;
+}
+
+.f-right {
+  text-align: right;
+}
+
+
+// =========================== color ===========================
+
+.bg-primary {
+  background-color: $primary;
+  color: #fff;
+}
+
+.bg-tertiary {
+  background-color: $tertiary;
+}
+
+.f-primary {
+  color: $primary;
+}
+
+.f-secondary {
+  color: $secondary;
+}
+.f-white{
+  color: #fff;
+}
+// =========================== item ===========================
+.btn {
+  background-color: $primary;
+  color: #fff;
+  font-size: 20px;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}

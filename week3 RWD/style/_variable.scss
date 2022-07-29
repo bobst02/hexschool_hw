@@ -1,0 +1,26 @@
+$primary:#AA0601;
+$secondary:#650300;
+$tertiary:#FBF2F2;
+// =========================== rwd ===========================
+
+@mixin pad {
+  @media (max-width:768px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width:375px) {
+    @content;
+  }
+}
+// =========================== mixin ===========================
+
+@mixin form {
+  width: 100%;
+  padding: 6px 12px;
+  background-color: $tertiary;
+  border: 1px solid #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
