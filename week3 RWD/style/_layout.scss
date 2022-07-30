@@ -69,6 +69,7 @@
 
     li {
       margin-left: 32px;
+
       &:hover {
         transform: scale(1.2);
       }
@@ -130,9 +131,12 @@
   }
 
   @include phone {
-    position: relative;
     padding-top: 24px;
     padding-bottom: 24px;
+
+    .container {
+      position: relative;
+    }
 
     &_nav {
       display: none;
